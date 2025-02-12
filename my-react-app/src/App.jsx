@@ -5,7 +5,6 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -15,6 +14,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Banner2 = () => {
-    return (
-        <div className='banner2'></div>
-    );
+  return <div className="banner2"></div>;
 };
 
 export default Banner2;

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Banner = () => {
-    return (
-        <div className='banner1'>
-            <h1>Chez vous, partout et ailleurs</h1>
-        </div>
-    );
+  return (
+    <div className="banner1">
+      <h1>Chez vous, partout et ailleurs</h1>
+    </div>
+  );
 };
 
 export default Banner;
