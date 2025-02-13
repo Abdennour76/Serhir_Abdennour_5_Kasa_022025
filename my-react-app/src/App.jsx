@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";
+import Propriete from "./pages/Propriete";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/propriete/:id" element={<Propriete />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

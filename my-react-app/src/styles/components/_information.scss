@@ -1,0 +1,86 @@
+
+.information-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-1;
+}
+
+.information-location {
+    font-size: 18px;
+}
+
+.information-tag {
+    padding: 5px 20px 5px 20px;
+    margin-right: 10px;
+    background-color: $color-1;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.star-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  
+    &.filled {
+      color: $color-1;
+    }
+  
+    &.empty {
+      color: #d3d3d3;
+    }
+  }
+
+.information-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.collapse-description {
+    width: 582px;
+}
+
+.collapse-equipements {
+    width: 582px;
+}
+
+.information-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 30px 0 30px;
+  
+    .information-details {
+      flex: 1;
+    }
+  
+    .information-host-rating {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* Aligne le contenu à droite */
+      gap: 10px;
+  
+      .information-host {
+        display: flex;
+        align-items: center;
+  
+        .host-name {
+          font-size: 18px;
+          color: $color-1;
+          text-align: end;
+          margin-right: 10px;
+        }
+  
+        .host-picture {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin-bottom: 15px;
+          margin-top: 20px;
+        }
+      }
+  
+    }
+  }
+  

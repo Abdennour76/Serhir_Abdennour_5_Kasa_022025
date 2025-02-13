@@ -24,7 +24,7 @@
         background-color: $color-1;
         color: white;
         font-weight: bold;
-        cursor: pointer;
+        
 
         .collapse-title {
             margin: 0;
@@ -39,6 +39,7 @@
             transform: rotate(-45deg); // Flèche vers le bas par défaut
             transition: transform 0.3s ease;
             margin-bottom: 5px;
+            cursor: pointer;
 
             &.open {
                 transform: rotate(135deg); // Flèche vers le haut si ouverte

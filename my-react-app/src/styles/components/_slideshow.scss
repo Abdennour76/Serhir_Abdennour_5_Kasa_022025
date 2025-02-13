@@ -1,0 +1,50 @@
+.slideshow {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  
+    .slide-container {
+      position: relative;
+      overflow: hidden;
+
+      .slide-image {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+      }
+  
+  
+    }
+  
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    margin: 10px
+  }
+
+    &.arrow-left {
+      left: 10px; // Position à gauche
+    }
+
+    &.arrow-right {
+      right: 10px; // Position à droite
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7); // Couleur au survol
+    }
+
+    &.hidden {
+      display: none; // Cacher les flèches inutiles
+    }
+}
+  
+  
