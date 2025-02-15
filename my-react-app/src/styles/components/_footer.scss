@@ -6,14 +6,33 @@
   padding: 20px 0; /* Espacement vertical */
   margin-top: 50px;
 
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
   }
-  
-  
-    .footer-logo {
-      width: 100px;
-      margin-bottom: 10px;
-    }
-  
-    .footer-text {
-      font-size: 14px;
-    }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+// Media queries
+@media (max-width: 1024px) {
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    font-size: 10px;
+  }
+
+  .footer-logo {
+    width: 60px;
+  }
+}

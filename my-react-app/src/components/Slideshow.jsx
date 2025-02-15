@@ -4,13 +4,19 @@ const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousSlide = () => {
-    if (currentIndex > 0) {
+    if (currentIndex === 0) {
+      // Si on est sur la première image, revenir à la dernière
+      setCurrentIndex(pictures.length - 1);
+    } else {
       setCurrentIndex(currentIndex - 1);
     }
   };
 
   const nextSlide = () => {
-    if (currentIndex < pictures.length - 1) {
+    if (currentIndex === pictures.length - 1) {
+      // Si on est sur la dernière image, revenir à la première
+      setCurrentIndex(0);
+    } else {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -25,24 +31,28 @@ const Slideshow = ({ pictures }) => {
         />
         {pictures.length > 1 && (
           <>
+            {/* Flèche gauche */}
             <button
               onClick={previousSlide}
-              className={`arrow arrow-left ${
-                currentIndex === 0 ? "hidden" : ""
-              }`}
+              className="arrow arrow-left"
               aria-label="Previous slide"
             >
-              <i className="fa-solid fa-chevron-left fa-2xl"></i>
+              ❮
             </button>
+
+            {/* Flèche droite */}
             <button
               onClick={nextSlide}
-              className={`arrow arrow-right ${
-                currentIndex === pictures.length - 1 ? "hidden" : ""
-              }`}
+              className="arrow arrow-right"
               aria-label="Next slide"
             >
-              <i className="fa-solid fa-chevron-right fa-2xl"></i>
+              ❯
             </button>
+
+            {/* Indicateur de position */}
+            <div className="indicator">
+              {currentIndex + 1} / {pictures.length}
+            </div>
           </>
         )}
       </div>

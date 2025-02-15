@@ -6,7 +6,6 @@
     margin-top: 20px;
 }
 
-
 .collapse {
     border-radius: 5px;
     margin-bottom: 10px;
@@ -14,7 +13,6 @@
     background-color: #fff;
     width: 1023px;
     margin-top: 10px;
-    
 
     .collapse-header {
         display: flex;
@@ -24,7 +22,6 @@
         background-color: $color-1;
         color: white;
         font-weight: bold;
-        
 
         .collapse-title {
             margin: 0;
@@ -55,3 +52,21 @@
         line-height: 1.5;
     }
 }
+
+  // Media queries
+  @media (max-width: 1024px) {
+    .collapse {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .collapse {
+      width: 90%;
+    }
+  
+    .collapse-content {
+      font-size: 12px;
+    }
+  }
+  

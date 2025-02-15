@@ -4,13 +4,14 @@ import data from "../data/data.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Information from "../components/Information";
+import Error from "./Error";
 
 const Propriete = () => {
   const { id } = useParams(); // Récupérer l'ID depuis l'URL
   const logement = data.find((item) => item.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé !</div>;
+    return <Error />;
   }
 
   return (

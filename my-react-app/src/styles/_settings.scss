@@ -1,40 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
 $font-1: "Montserrat", sans-serif;
-
 $color-1: #FF6060;
-
 
 html,
 body {
-    height: 100%;
     font-family: $font-1;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-width: 1024px;
 }
 
 .page-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh; /* Assure que la page occupe toujours 100% de la hauteur */
-  }
-
-.header {
-    display: flex;
-    justify-content: center;
 }
 
-.main-container {
+.main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 20px;
     flex: 1;
+    max-width: 1440px;
 }
 
 li {
@@ -47,25 +37,25 @@ li {
     justify-content: center;
 }
 
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Media Queries */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 10px; /* Réduit le padding sur les bords */
+    }
     .main-container {
-      max-width: 1024px; /* Limite la largeur à 1024px */
-      min-width: 769px;
-      margin: 0 auto; /* Centre le conteneur horizontalement */
-      box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+        width: 90%; /* S'assure que le contenu prend tout l'espace disponible */
+        margin-top: 10px; /* Réduit l'espacement supérieur */
     }
 }
 
-/* Small devices (phones, less than 768px) */
+
 @media (max-width: 768px) {
+    .container {
+        padding: 0 5px; /* Réduit encore plus le padding sur mobile */
+    }
+
     .main-container {
-      max-width: 768px;
-      min-width: 375px;
-      margin: 0 auto;
-      box-sizing: border-box;
-      padding: 0;
+        width: 90%; /* S'assure que le contenu prend tout l'espace disponible */
+        margin-top: 10px; /* Réduit l'espacement supérieur */
     }
 }
