@@ -14,6 +14,8 @@
     width: 1200px;
     margin-top: 15px;
 
+}
+
     .collapse-header {
         display: flex;
         justify-content: space-between;
@@ -22,6 +24,7 @@
         background-color: $color-1;
         color: white;
         font-weight: bold;
+    }
 
         .collapse-title {
             margin: 0;
@@ -42,16 +45,16 @@
                 transform: rotate(135deg); // Flèche vers le haut si ouverte
             }
         }
-    }
+
 
     .collapse-content {
+      display: block;
         padding: 15px 20px;
         background-color: #f9f9f9; // Couleur pour le contenu
         color: #333;
         font-size: 14px;
         line-height: 1.5;
     }
-}
 
   // Media queries
   @media (max-width: 1024px) {
@@ -66,11 +69,30 @@
       margin-top: 0;
     }
     .collapse {
-      width: 100%;
+      margin-bottom: 20px;
+
+    
+      &-description,
+      &-equipements {
+        padding: 10px 15px;
+    
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+    
+          li {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+          }
+        }
+      }
     }
-  
-    .collapse-content {
-      font-size: 12px;
-    }
+    
+
   }
-  

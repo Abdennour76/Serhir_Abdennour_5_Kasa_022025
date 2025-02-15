@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import data from "../data/data.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Information from "../components/Information";
 import Error from "./Error";
+import Slideshow from "../components/Slideshow";
 
 const Propriete = () => {
   const { id } = useParams(); // Récupérer l'ID depuis l'URL
@@ -20,7 +20,7 @@ const Propriete = () => {
         <Navigation />
       </header>
       <main className="main-container">
-        <Information logement={logement} />
+        <Slideshow logement={logement} />
       </main>
       <Footer />
     </div>
