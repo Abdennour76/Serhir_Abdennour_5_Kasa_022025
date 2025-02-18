@@ -34,8 +34,8 @@ a {
     
 }
 
-/* Media query pour tablette (max-width: 1024px) */
-@media (max-width: 1024px) {
+
+@media (max-width: 1240px) {
     .error {
         flex-direction: column;
         padding: 20px;
