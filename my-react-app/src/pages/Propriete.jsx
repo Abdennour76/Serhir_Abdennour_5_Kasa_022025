@@ -4,7 +4,7 @@ import data from "../data/data.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Error from "./Error";
-import Slideshow from "../components/Slideshow";
+import Information from "../components/Information"; // Import du nouveau fichier
 
 const Propriete = () => {
   const { id } = useParams(); // Récupérer l'ID depuis l'URL
@@ -20,7 +20,8 @@ const Propriete = () => {
         <Navigation />
       </header>
       <main className="main-container">
-        <Slideshow logement={logement} />
+        <Information logement={logement} />{" "}
+        {/* Utilisation du nouveau composant */}
       </main>
       <Footer />
     </div>
