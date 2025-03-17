@@ -1,0 +1,72 @@
+.error {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que la page occupe toujours 100% de la hauteur */
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    color: $color-1;
+    font-family: $font-1;
+    font-size: 200px;
+    width: 1240px;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 284px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: $color-1;
+    font-family: $font-1;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-family: $font-1;
+    
+}
+
+
+@media (max-width: 1240px) {
+    .error {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 120px;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* Media query pour téléphone (max-width: 768px) */
+@media (max-width: 768px) {
+    .error {
+        padding: 10px;
+    }
+
+    h6 {
+        font-size: 80px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

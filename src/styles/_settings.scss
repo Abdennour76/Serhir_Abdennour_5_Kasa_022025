@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$font-1: "Montserrat", sans-serif;
+$color-1: #FF6060;
+
+html,
+body {
+    font-family: $font-1;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Assure que la page occupe toujours 100% de la hauteur */
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex: 1;
+    max-width: 1440px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 1240px) {
+    .container {
+        padding: 0 10px; /* Réduit le padding sur les bords */
+    }
+    .main-container {
+        width: 90%; /* S'assure que le contenu prend tout l'espace disponible */
+        margin-top: 10px; /* Réduit l'espacement supérieur */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5px; /* Réduit encore plus le padding sur mobile */
+    }
+
+    .main-container {
+        width: 90%; /* S'assure que le contenu prend tout l'espace disponible */
+        margin-top: 10px; /* Réduit l'espacement supérieur */
+    }
+}
