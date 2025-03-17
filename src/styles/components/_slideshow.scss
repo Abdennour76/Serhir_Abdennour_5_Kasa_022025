@@ -1,0 +1,428 @@
+/* Slideshow SCSS */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  
+
+  .slide-container {
+    position: relative;
+    width: 100%;
+    img {
+  width: 1240px;
+  height: 415px;
+  display: block;
+  object-fit: cover;
+  border-radius: 25px;
+  overflow: hidden;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 80px;
+
+    &.arrow-left {
+      left: 10px;
+    }
+
+    &.arrow-right {
+      right: 10px;
+    }
+  }
+
+  .indicator {
+    position: absolute;
+    bottom: 10px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* Information SCSS */
+.information-main {
+  display: flex;
+  justify-content: space-between;
+}
+  
+
+    .information-details {
+      margin-bottom: 20px;
+    }
+      .information-title {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: lighter;
+        color: $color-1;
+      }
+      .information-location {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 10px;
+      }
+      .information-tags {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .information-tag {
+        padding: 5px 10px;
+        background-color: $color-1;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 14px;
+        color: white;
+        }
+      
+    
+
+    .information-host-rating {
+      display: grid;
+      flex-direction: row-reverse;
+    }
+
+    .information-host {
+      display: flex;
+      padding: 0 20px;
+      margin-top: 10px;
+    }
+        .host-name {
+          display: block;
+          font-size: 18px;
+          color: $color-1;
+          margin-right: 10px;
+        }
+        .host-picture {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      
+      .information-rating {
+        display: flex;
+        margin-left: 70px;
+      }
+      .star-icon {
+        font-size: 18px;
+        margin-right: 10px;
+      
+        &.filled {
+          color: $color-1;
+        }
+      
+        &.empty {
+          color: #d3d3d3;
+        }
+      }
+      
+    
+  
+
+  .information-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+    .collapse-description, .collapse-equipements {
+      margin-bottom: 10px;
+      width: 582px;
+    }
+  
+    @media (max-width: 1240px) {
+      .slideshow {
+         
+        .slide-container {
+         position: relative;
+         width: 100%;
+           img {
+             width: 100%;
+         height: 255px;
+         display: block;
+         object-fit: cover;
+         border-radius: 25px;
+         overflow: hidden;
+           }
+         }
+       
+         .arrow {
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+           background: none;
+           border: none;
+           color: white;
+           font-size: 40px;
+           cursor: pointer;
+           z-index: 1000;
+           
+       
+           &.arrow-left {
+             left: 10px;
+           }
+       
+           &.arrow-right {
+             right: 10px;
+           }
+         }
+       
+         .indicator {
+           position: absolute;
+           bottom: 10px;
+           top: 80%;
+           left: 50%;
+           transform: translateX(-50%);
+           background: none;
+           color: white;
+           padding: 5px 10px;
+           border-radius: 5px;
+           font-size: 12px;
+           text-align: center;
+         }
+       }
+       
+       /* Information SCSS */
+       .information-main {
+         display: flex;
+         flex-direction: column;
+       }
+         
+       
+           .information-details {
+             margin-bottom: 0;
+           }
+             .information-title {
+               font-size: 18px;
+       
+             }
+             .information-location {
+               font-size: 14px;
+             }
+       
+               .information-tag {
+               font-size: 10px;
+               }
+             
+           
+       
+           .information-host-rating {
+             display: flex;
+             justify-content: space-between;
+             flex-direction: row-reverse;
+             align-items: baseline;
+           }
+       
+           .information-host {
+             display: flex;
+             padding: 0;
+             margin-top: 0;
+           }
+               .host-name {
+                 display: block;
+                 font-size: 12px;
+                 color: $color-1;
+                 margin-right: 10px;
+               }
+               .host-picture {
+                 width: 34px;
+                 height: 34px;
+                 border-radius: 50%;
+                 object-fit: cover;
+               }
+             
+             .information-rating {
+               display: flex;
+               margin-left: 0;
+             }
+             .star-icon {
+               font-size: 12px;
+               margin-right: 5px;
+             
+               &.filled {
+                 color: $color-1;
+               }
+             
+               &.empty {
+                 color: #d3d3d3;
+               }
+             }
+             
+           
+         
+       
+         .information-section {
+           display: flex;
+           justify-content: space-between;
+           gap: 50px;
+           margin-top: 20px;
+         }
+           .collapse-description, .collapse-equipements {
+             margin-bottom: 10px;
+             width: 335px;
+           }
+       
+           .collapse-equipements li {
+             display: block;
+           }
+     }
+
+
+    @media (max-width: 768px) {
+/* Slideshow SCSS */
+.slideshow {
+ max-width: 768px;
+  
+ .slide-container {
+  position: relative;
+  width: 100%;
+    img {
+      width: 100%;
+  height: 255px;
+  display: block;
+  object-fit: cover;
+  border-radius: 25px;
+  overflow: hidden;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1000;
+    
+
+    &.arrow-left {
+      left: 10px;
+    }
+
+    &.arrow-right {
+      right: 10px;
+    }
+  }
+
+  .indicator {
+    position: absolute;
+    bottom: 10px;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Information SCSS */
+.information-main {
+  display: flex;
+  flex-direction: column;
+}
+  
+
+    .information-details {
+      margin-bottom: 0;
+    }
+      .information-title {
+        font-size: 18px;
+
+      }
+      .information-location {
+        font-size: 14px;
+      }
+
+        .information-tag {
+        font-size: 10px;
+        }
+      
+    
+
+    .information-host-rating {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: baseline;
+    }
+
+    .information-host {
+      display: flex;
+      padding: 0;
+      margin-top: 0;
+    }
+        .host-name {
+          display: block;
+          font-size: 12px;
+          color: $color-1;
+          margin-right: 10px;
+        }
+        .host-picture {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      
+      .information-rating {
+        display: flex;
+        margin-left: 0;
+      }
+      .star-icon {
+        font-size: 12px;
+        margin-right: 5px;
+      
+        &.filled {
+          color: $color-1;
+        }
+      
+        &.empty {
+          color: #d3d3d3;
+        }
+      }
+      
+    
+  
+
+  .information-section {
+    display: grid;
+    margin-top: 20px;
+    gap: 0;
+  }
+    .collapse-description, .collapse-equipements {
+      margin-bottom: 10px;
+      width: 335px;
+    }
+
+    .collapse-equipements li {
+      display: block;
+    }
+  }
+    
+  
+
