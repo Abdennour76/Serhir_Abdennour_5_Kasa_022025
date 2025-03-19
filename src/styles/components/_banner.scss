@@ -4,7 +4,7 @@
     width: 86%;
     height: 180px;
     border-radius: 20px;
-    background: url(../../../public/Imagesource1.png) center/cover;
+    background: url(#{$base-url}/Imagesource1.png) center/cover;
     position: relative;
   
     &::after {
@@ -39,7 +39,7 @@
     border-radius: 20px;
     padding: 5px 0;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-    background: url(../../../public/Imagesource2.png) center/cover;
+    background: url(#{$base-url}/Imagesource2.png) center/cover;
     filter: brightness(0.5);
     margin-bottom: 50px;
   }
